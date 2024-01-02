@@ -91,8 +91,6 @@ Requirements:
 Only these functions are allowed: write, printf, putchar, puts, malloc, free
 
 
-Solving a problem is already a big win! but finding the best and optimal way to solve it, it’s way better! Think about the most optimal / fastest way to do it.
-
 File: 100-write.py
 11. Hello, write
 Write a Python script that prints exactly and that piece of art is useful - Dora Korpar, 2015-10-19, followed by a new line.
@@ -110,3 +108,6 @@ The output filename has to be $PYFILEc (ex: export PYFILE=my_main.py => output f
 File: 102-magic_calculation.py
 13. ByteCode -> Python #1
 Write the Python function def magic_calculation(a, b): that does exactly the same as the following Python bytecode:
+
+
+Solving a problem is already a big win! but finding the best and optimal way to solve it, it’s way better! Think about the most optimal / fastest way to do it.
