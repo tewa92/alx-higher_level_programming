@@ -31,8 +31,8 @@ class Rectangle:
                     return rec_str[:-1]
 
                 def __repr__(self):
-                """Return a string representation of a Rectangle instance
-                that is able to recreate a new instance by using eval()"""
+                    """Return a string representation of a Rectangle instance
+                    that is able to recreate a new instance by using eval()"""
                 return "Rectangle({}, {})".format(self.__width, self.__height)
 
             @property
@@ -83,7 +83,8 @@ class Rectangle:
                         """Calculates the perimeter of a Rectangle instance
 
                         Returns:
-                        Perimeter of the rectangle, given by 2 * (height + width)
+                        Perimeter of the rectangle, given by
+                        2 * (height + width)
                         """
                         if self.__height == 0 or self.__width == 0:
                             return 0

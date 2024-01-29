@@ -33,7 +33,8 @@ class Rectangle:
                     """Return a string representation of a Rectangle instance
                     that is able to recreate a new instance by using eval()
                     """
-                    return "Rectangle({}, {})".format(self.__width, self.__height)
+                    return
+                "Rectangle({}, {})".format(self.__width, self.__height)
 
                 def __del__(self):
                     """Deletes a Rectangle instance."""
@@ -64,7 +65,7 @@ class Rectangle:
 
                         @height.setter
                         def height(self, value):
-                        """Sets the height of a Rectangle instance
+                            """Sets the height of a Rectangle instance
 
                         Args:
                         value: value of the height, must be a positive integer
@@ -87,8 +88,9 @@ class Rectangle:
                             """Calculates the perimeter of a Rectangle instance
 
                             Returns:
-                                Perimeter of the rectangle, given by 2 * (height + width)
+                                Perimeter of the rectangle, given by
+                                2 * (height + width)
                                 """
-                                if self.__height == 0 or self.__width == 0:
-                                    return 0
-                                    return 2 * (self.__width + self.__height)
+                            if self.__height == 0 or self.__width == 0:
+                                return 0
+                                return 2 * (self.__width + self.__height)

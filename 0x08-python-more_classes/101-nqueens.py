@@ -69,7 +69,7 @@ def xout(board, row, col):
     c = col + 1
     for r in range(row - 1, -1, -1):
         if c >= len(board):
-           break
+            break
         board[r][c] = "x"
         c += 1
     # X out all spots diagonally down to the left
@@ -79,6 +79,7 @@ def xout(board, row, col):
             break
         board[r][c] = "x"
         c -= 1
+
 
 def recursive_solve(board, row, queens, solutions):
     """Recursively solve an N-queens puzzle.
