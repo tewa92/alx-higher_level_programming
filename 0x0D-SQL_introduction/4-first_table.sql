@@ -1,4 +1,4 @@
--- creates a table called first_table in the current database
--- if the table first_table already exists, your script should not fail
-CREATE TABLE IF NOT EXISTS firsti_table (id INT,
+-- creates a tabel first_table in current db
+-- does not fail if table exists
+CREATE TABLE IF NOT EXISTS first_table (id INT,
 name VARCHAR(256));
