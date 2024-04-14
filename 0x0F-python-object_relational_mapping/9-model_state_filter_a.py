@@ -5,7 +5,7 @@ Print the state name from db if they contain letter 'a' inside the name
 
 import sys
 from model_state import Base, State
-from sqlalchemy import (create_enggine)
+from sqlalchemy import (create_engine)
 from sqlalchemy.orm import sessionmaker
 
 if __name__ == "__main__":
