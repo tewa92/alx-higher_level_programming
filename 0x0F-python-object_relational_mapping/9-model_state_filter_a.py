@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Print the state name from db if they contain letter 'a' inside the name
+Print the state name from db hbtn_0e_6_usa if they contain letter 'a' inside the name
 """
 
 import sys
@@ -9,7 +9,7 @@ from sqlalchemy import (create_engine)
 from sqlalchemy.orm import sessionmaker
 
 if __name__ == "__main__":
-    engine = create_engine('mysql+mysqlb://{}:{}@localhost:3306/{}'
+    engine = create_engine('mysql+mysqldb://{}:{}@localhost:3306/{}'
                             .format(sys.argv[1], sys.argv[2], sys.argv[3]))
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
