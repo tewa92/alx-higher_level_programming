@@ -11,8 +11,8 @@ from sqlalchemy.orm import sessionmaker
 if __name__ == "__main__":
     engine = create_enggine('mysql+mysqlb://{}:{}@localhost:3306/{}'
                             .format(sys.argv[1], sys.argv[2], sys.argv[3]))
-    Base.metadata.create_All(engine)
+    Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
-    Session = Session()
+    session = Session()
     for instance in Session.query(State).filter(State.name.like('%a%')):
         print(instance.id, instance.name, sep=": ")
