@@ -13,6 +13,6 @@ class State(Base):
     """
     CLASS with ID and NAME attribute of each state
     """
-    __table__ = 'states'
+    __tablename__ = 'states'
     id = Column(Integer, unique=True, nullable=False, primary_key=True)
     name = Column(String(128), nullable=False)
