@@ -13,7 +13,7 @@ if __name__ == "__main__":
                          passwd=sys.argv[2], db=sys.argv[3], poet=3306)
     cur = db.cursor()
     cur.excute(""" SELECT cities.name FROM cities
-                INNER JOIN states ON states.id=cities.states_id
+                INNER JOIN states ON states.id=cities.state_id
                 WHERE states.name=%s""", (sys.argv[4],))
 
     rows = cur.fetchall()
