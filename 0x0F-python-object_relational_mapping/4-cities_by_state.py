@@ -21,7 +21,7 @@ if __name__ == "__main__":
                 INNER JOIN
                     states
                 ON
-                    cities.states_id = states.id
+                    states.id=cities.states_id
                 """)
     rows = cur.fetchall()
     for row in rows:
