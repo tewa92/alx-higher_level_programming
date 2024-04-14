@@ -17,7 +17,7 @@ if __name__ == "__main__":
 
     cur = db.cursor()
     match = sys.argv[4]
-    cur.excute("SELECT * FROM states WHERE name LIKE %s", (match, ))
+    cur.execute("SELECT * FROM states WHERE name LIKE %s", (match, ))
     rows = cur.fetchall()
     for row in rows:
         print(row)
